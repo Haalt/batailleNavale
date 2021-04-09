@@ -1,0 +1,66 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "group": "build",
+      "command": "",
+      "args": [
+        "make",
+      ],
+      "options": {
+        "shell": {
+          "args": ["-c"]
+        }
+      }
+    },
+    {
+      "label": "test",
+      "type": "shell",
+      "group": "test",
+      "command": "",
+      "args": [
+        "make",
+        "test"
+      ],
+      "options": {
+        "shell": {
+          "args": ["-c"]
+        }
+      }
+    },
+    {
+      "label": "test-ai",
+      "type": "shell",
+      "group": "test",
+      "command": "",
+      "args": [
+        "make",
+        "test-ai"
+      ],
+      "options": {
+        "shell": {
+          "args": ["-c"]
+        }
+      }
+    },
+    {
+      "label": "shootPos",
+      "type": "shell",
+      "group": "test",
+      "command": "",
+      "args": [
+        "make",
+        "shootPos"
+      ],
+      "options": {
+        "shell": {
+          "args": ["-c"]
+        }
+      }
+    }
+  ]
+}

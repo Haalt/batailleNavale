@@ -1,0 +1,5 @@
+**.d.byte
+**/build/
+**.zip
+**/node_modules
+**/games/*

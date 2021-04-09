@@ -1,0 +1,47 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+
+      {
+          "name": "OCaml",
+          "type": "ocamldebug",
+          "request": "launch",
+          "program": "${workspaceRoot}/CPbattleship.d.byte",
+          "stopOnEntry": false,
+          "preLaunchTask": "build" // Build before launch
+      },
+      {
+          "name": "Sah",
+          "type": "ocamldebug",
+          "request": "launch",
+          "program": "${workspaceRoot}/placeShips.d.byte",
+          "stopOnEntry": false,
+          "arguments": ["--player", "Halt", "--gameId", "ouaaHk", "--1px1", "4", "--1py1", "2", "--1px2", "5", "--1py2", "2", "--1px3", "6", "--1py3", "2", "--1px4", "7", "--1py4", "2", "--1px5", "8", "--1py5", "2", "--2px1", "2", "--2py1", "4", "--2px2", "3", "--2py2", "4", "--2px3", "4", "--2py3", "4", "--2px4", "5", "--2py4", "4", "--3px1", "1", "--3py1", "6", "--3px2", "2", "--3py2", "6", "--3px3", "3", "--3py3", "6", "--4px1", "1", "--4py1", "8", "--4px2", "2", "--4py2", "8", "--4px3", "3", "--4py3", "8", "--5px1", "5", "--5py1", "7", "--5px2", "6", "--5py2", "7"]
+      },
+      {
+          "name": "OCaml test",
+          "type": "ocamldebug",
+          "request": "launch",
+          "program": "${workspaceRoot}/CPbattleship_test.d.byte",
+          "stopOnEntry": false,
+          "preLaunchTask": "test" // Build before launch
+      },
+      {
+          "name": "OCaml test ai",
+          "type": "ocamldebug",
+          "request": "launch",
+          "program": "${workspaceRoot}/ai_test.d.byte",
+          "stopOnEntry": false,
+          "preLaunchTask": "test-ai" // Build before launch
+      },
+      {
+          "name": "OCaml shootPos",
+          "type": "ocamldebug",
+          "request": "launch",
+          "program": "${workspaceRoot}/bin/shootPos.d.byte",
+          "arguments": ["--gameId", "hgULbX"],
+          "stopOnEntry": false,
+        //   "preLaunchTask": "shootPos" // Build before launch
+      }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "group": "build",
+      "command": "",
+      "args": [
+        "make",
+      ],
+      "options": {
+        "shell": {
+          // "executable": "C:\\WINDOWS\\System32\\bash.exe",
+          "args": ["-c"]
+        }
+      }
+    },
+    {
+      "label": "test",
+      "type": "shell",
+      "group": "test",
+      "command": "",
+      "args": [
+        "make",
+        "test"
+      ],
+      "options": {
+        "shell": {
+          // "executable": "C:\\WINDOWS\\System32\\bash.exe",
+          "args": ["-c"]
+        }
+      }
+    }
+  ]
+}
